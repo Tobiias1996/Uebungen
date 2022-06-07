@@ -11,9 +11,9 @@ Geier = 4
 Meise = 4
 
 if (Adler < Meise):
-    print("Ein Adler ist größer als eine Meise")
+    print("Ein Adler ist kleiner als eine Meise")
 elif (Geier == Meise):
-    print("Geier ist so groß wie eine Meise")
+    print("Ein Geier ist so groß wie eine Meise")
 elif (Adler > Geier):
     print("Ein Adler ist größer als ein Geier")
 else:
