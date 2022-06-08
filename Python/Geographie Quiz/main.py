@@ -39,9 +39,9 @@ if (WelcheSchwierigkeit=="1"):
                                 else:
                                     print ("Das stimmt nicht, vielleicht schaffst du es ja beim nächsten Mal!")    
                             else:
-                                print ("Nein, versuche es doch noch einmal")
+                                print ("Nein, versuche es doch noch einma.l")
                         else:
-                            print("Leider falsch. Versuche es doch noch einmal")
+                            print("Leider falsch. Versuche es doch noch einmal.")
                     else:
                         print("Nein, versuche es doch noch einmal.")    
             else:
@@ -58,6 +58,47 @@ elif(WelcheSchwierigkeit=="2"):
         if (KoennerFrageZwei=="2"):
             print("Zwar ist Grönland bestrebt unabhängig zu werden. Doch momentan ist es noch immer mit Dänemark assoziiert! Schauen wir uns die dritte Frage an:")
             KoennerFrageDrei=input("Welches dieser Länder gehört zum Baltikum?\n 1: Finnland\n 2: Polen\n 3: Litauen\n")
+            if (KoennerFrageDrei=="3"):
+                print ("Polen und Finnland gehören nicht zum Baltikum. Neben Litauen bilden Estland und Lettland das Baltikum. Korrekte Antwort!")
+                KoennerFrageVier=input("Welche Farbe kommt auf den meisten Landesflaggen vor?\n 1: Rot\n 2: Blau\n 3: Grün\n")
+                if (KoennerFrageVier=="1"):
+                    print("Richtig. Sieh dir nur einmal eine Übersicht an und dir wird sicherlich sofort auffallen, dass die Farbe Rot auf den meisten Flaggen zu erkennen ist.")
+                    KoennerFrageFuenf=input("Welches dieser Länder zählt NICHT zur Region Südostasien?\n 1: Myanmar\n 2: Bangladesch\n 3: Brunei\n")
+                    if (KoennerFrageFuenf=="2"):
+                        print("Sehr gut. Bangladesch zählt man offiziell zur Region Südasien. Bisher läuft es doch ganz gut. gehen wir weiter zur sechsten Frage:")
+                        KoennerFrageSechs=input("Was ist die Hauptstadt des zweitbevölkerungsreichsten Land in Skandinavien?\n 1: Oslo\n 2. Helsinki\n 3. Kopenhagen\n")
+                        if (KoennerFrageSechs=="3"):
+                            print("Richtig! Dänemark hat knapp mehr Einwohner als Finnland und Norwegen. Das meistbevölkerste Land Skandinaviens ist übrigens Schweden! In Island leben mit Abstand die wenigsten Skandinavier. Frage Sieben:")
+                            KoennerFrageSieben=input("An welches der folgenden Länder grenzt Russland NICHT.\n 1: Nordkorea\n 2: Polen\n 3: Usbekistan\n")
+                            if (KoennerFrageSieben=="3"):
+                                print("Langsam wird es kompliziert oder? Tatsächlich teilt sich Russland eine weniger als 50 km lange Grenze mit Nordkorea und dank seiner Exklave Kaliningrad auch eine mit Polen")
+                                KoennerFrageAcht= input("Auf welcher der drei folgenden Landesflaggen gibt es KEINEN Stern.\n 1: Angola \n 2: Pakistan\n 3: Argentinien\n")
+                                if (KoennerFrageAcht=="3"):
+                                    print("Genau. Auf der argentinischen Flagge ist eine Sonne zu sehen. Wir nähern uns dem Finale:")
+                                    KoennerFrageNeun=input("Wie viele Länder werden komplett von der Republik Südafrika umschlossen?\n 1: 1\n 2: 2\n 3: 3\n")
+                                    if (KoennerFrageNeun=="2"):
+                                        print ("Die Republik Südafrika umschließt die Länder Lesotho und Swasiland komplett. Deine Antwort war also korrekt. Bist du bereit für die letzte Frage?")
+                                        KoennerFrageZehn=input("Welche der folgenden Metropolregionen gehört NICHT zu den fünftgrößten der Welt?\n 1: Shanghai\n 2: Delhi\n 3: Sao Paulo\n")
+                                        if (KoennerFrageZehn=="1"):
+                                            print("Herzlichen Glückwunsch! Du bist ein wahrhaftiger Geographie Könner. Shanghai ist 'nur' die achtgrößte Metropolregion auf der Erde.")
+                                        else:
+                                            print ("Es ist keine Schande im Finale falschzuliegen. Wenn dich diese Niederlage ärgert, kannst du es gerne noch einmal probieren!")
+                                    else:
+                                        print("Bedauerlicherweise war deine Antwort falsch und das bei der neunten Frage. Willst du es bis ins Finale schaffen? Dann versuche es erneut")
+                                else:
+                                    print("So kurz vor dem Finale ist dir ein Fehler unterlaufen. Du kannst es aber natürlich noch einmal probieren")
+                            else:
+                                print("Die Frage war zugegeben schwer. Hier kann sich auch einmal ein Könner irren. Versuche es erneut!")    
+                        else:
+                            print("Nein. Versuche es erneut oder gibst du dich etwa geschlagen?")
+                    else:
+                        print("Die Frage war zugegeben schwer. Hier kann sich auch einmal ein Könner irren. Versuche es erneut!")
+                else:
+                    print("Falsch! Versuche es doch noch einmal.")
+            else:
+                print ("Leider falsch. Versuche es doch noch einmal oder beginne mit den Anfänger Fragen.")    
+        else:
+            print("Nein, versuche es doch noch einmal.")    
     else:
         print ("Ein Fehler, gleich bei der ersten Frage? Vielleicht solltest du doch mit den Anfänger Fragen beginnen?")
 else:
