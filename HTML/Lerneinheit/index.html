@@ -1,0 +1,179 @@
+<!--https://validator.w3.org/ für Fehlerüberprüfung-->
+<!-- https://way2tutorial.com/html/tag/index.php Liste von html tags-->
+<!DOCTYPE html>
+<!--Legt Dokumenttyp fest. Kommt immer zuerst-->
+<html lang="de">
+  <!--Legt die Sprache der Webseite fest-->
+
+  <head>
+    <!--Inhalt, den man auf der Website nicht sieht-->
+    <meta charset="UTF-8" />
+    <!--Zeichenformat. UTF-8 standard, erlaubt ä ö ü-->
+    <meta name="author" content="Tobiias1996" />
+    <meta
+      name="descritpion"
+      content="this page contains all the things I am learning how to create as I learn html."
+    />
+    <title>My first Web Page</title>
+    <!--Tap Name-->
+    <link rel="icon" href="Icon1.png" type="image/x-icon" />
+    <!--Icon geben. Bei Zahlennamen bei der .png Datei werden Fehler angezeigt-->
+  </head>
+
+  <body>
+    <!--Inhalt, den man auf der Website sieht-->
+    <header>
+      <h1>My Goals for the Year</h1>
+      <!--größte mögliche Überschrift-->
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li><a href="#html">Learn html</a></li>
+          <li><a href="#vacation">Planing a vacaction</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+    <!--hr erstellt einen Strich und trägt dazu bei, verschiedene suptopics deutlicher darzustellen-->
+    <main>
+      <article id="html">
+        <h2>I am ready to learn HTML!</h2>
+        <p>This is my first web page</p>
+        <section>
+          <h3>HTML5</h3>
+          <img
+            src="img/html_logo_300x300.png"
+            alt="HTML 5 Logo"
+            title="I am learning HTML5"
+            width="300"
+            height="300"
+          />
+          <figure>
+            <figcaption>An Example of HTML5 code</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h3>My Daily Schedule</h3>
+          <p>Let me tell you how I</p>
+          <ol>
+            <li>...I learn more about web dev.</li>
+            <li>... I plan out my Schedule.</li>
+            <li>
+              ... I use resources from
+              <abbr title="Mozilla Developer Network">
+                <a href="https://developer.mozilla.org/de/">MDN</a> </abbr
+              >.
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark> number of hours </mark> I code per day
+              </summary>
+              <p>
+                I start at <time datetime="08:00"> 8 am </time> and I write code
+                for <time datetime="PT3H">3 hours</time> every morning
+              </p>
+            </details>
+          </aside>
+        </section>
+      </article>
+
+      <hr />
+
+      <article id="vacation">
+        <h2>I am also planning a vaccation</h2>
+        <p>I have been working hard an <em> really need a getaway</em>.</p>
+        <!--em kursiv-->
+        <p>
+          I live in <abbr title="Nordrhein Westfalen">NRW</abbr> so I want to
+          visit a beach.
+        </p>
+        <!--abbr fährt man mit Maus über Kürzel sieht man vollen Namen-->
+
+        <section>
+          <h3>Places I d like to visit</h3>
+
+          <ul>
+            <!--ul Punktliste-->
+            <li>I have heard good things about the Caribbean</li>
+          </ul>
+          <figure>
+            <img
+              src="img/caribbean.jpg"
+              alt="Caribbean Beach"
+              title="I want to visit a Caribbean Beach"
+              width="400"
+              height="225"
+              loading="lazy"
+            />
+            <figcaption>Caribbean Beach Getaways</figcaption>
+          </figure>
+
+          <ul>
+            <li>
+              <p>I have heard good things about going here:</p>
+              <address>
+                <!--Automatisch kursiv und geringer Zeilenabstand, hat bei ul keinen punkt-->
+                Margaritaville Island Reserve Riviera Cancún<br />
+                Bahia Petempich Puerto Morelos, Mexico<br />
+                Colonia Morelos, México 77580
+              </address>
+            </li>
+          </ul>
+
+          <figure>
+            <img
+              src="img/vacation.jpg"
+              alt="Cancún Vacation"
+              title="It s 5 o clock Somwhere!"
+              width="400"
+              height="267"
+              loading="lazy"
+            />
+            <figcaption>A Carribean Vacation Image</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h3>Places I want to avoid</h3>
+          <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this <strong>cold</strong>!</dd>
+
+            <dt>South Pole</dt>
+            <dd>This is also cold</dd>
+
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold</dd>
+          </dl>
+        </section>
+      </article>
+
+      <hr />
+
+      <article id="contact">
+        <h2>Contact Me</h2>
+        <p>I d really like to hear from you!</p>
+        <form action="http://httpbin.org/get" method="get">
+          <label for="firstName">First Name:</label>
+          <input type="text" name="firstName" id="firstName" />
+        </form>
+      </article>
+    </main>
+    <hr />
+
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy; <a href="about.html">Tobiias1996</a> &gt;&gt;&gt;
+        <!--&lt= "<" , &copy= "copyright" , &gt= ">"  -->
+      </p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+  </body>
+</html>
