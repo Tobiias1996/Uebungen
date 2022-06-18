@@ -1,8 +1,5 @@
-SELECT 
-	name,
-	unit_price,
-    unit_price + 10 AS 'New Price'
-    
-    
-FROM sql_store.products;
-
+SELECT * 
+FROM world.country
+WHERE Population BETWEEN 1 AND 100000 AND Code REGEXP "s"
+ORDER by Population
+LIMIT 10
