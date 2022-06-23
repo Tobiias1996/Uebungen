@@ -9,9 +9,12 @@ SELECT  -- was davon ausgewählt werden soll (* =alles)
     (points +10) * 2  AS 'points IVorders',-- Points +10 * 2, AS = Alias
 	state,
     birth_date,
-    customer_id,
+    orders.customer_id,
     phone
 FROM customers	-- von welcher Tabelle
+JOIN  orders
+			ON orders.customer_id=customers.customer_id
+		
 -- WHERE points >1000 -- Zeigt nur Leute an, die mehr als 1.000 points haben
 -- Andere Möglichkeiten:
 -- >= , <, <=, =, != (ungleich)
@@ -30,7 +33,7 @@ FROM customers	-- von welcher Tabelle
 -- WHERE last_name REGEXP " [gim]e" -- jeder, der ge, ie oder me im Namen hat   Buchstabenreihe: "[a-h]e"
 -- WHERE phone IS NULL (Um nicht erfasste Daten zu finden)
 -- ORDER BY first_name, state -- nach Namen sortiert
--- LIMIT Zahl -- selbsterklärend
+-- LIMIT Zahl -- limitiert die Zahl der dargestellten Dinge
 
 
 
